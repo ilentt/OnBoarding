@@ -20,38 +20,38 @@ public class Project {
     public Project() {
     }
 
-    public Project(String name, Date finishingDate) {
-        this.name = name;
-        this.finishingDate = finishingDate;
-    }
-
     public Project(Long id, String name, Date finishingDate) {
         this.id = id;
         this.name = name;
         this.finishingDate = finishingDate;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-		this.id = id;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setFinishingDate(Date finishingDate) {
-		this.finishingDate = finishingDate;
-	}
-
-	public String getName() {
-        return name;
+    public Project(String name, Date finishingDate) {
+        this.name = name;
+        this.finishingDate = finishingDate;
     }
 
     public Date getFinishingDate() {
         return finishingDate;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+	public String getName() {
+        return name;
+    }
+
+	public void setFinishingDate(Date finishingDate) {
+		this.finishingDate = finishingDate;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+    public void setName(String name) {
+		this.name = name;
+	}
 }
