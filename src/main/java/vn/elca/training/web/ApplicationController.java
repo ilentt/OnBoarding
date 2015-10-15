@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,8 @@ import vn.elca.training.service.IProjectService;
 
 @Controller
 public class ApplicationController {
-    private IProjectService projectService;
+	@Autowired
+	private IProjectService projectService;
     @Value("${total.number.of.projects}")
     private String message;
     @Value("${application.title}")
@@ -39,4 +41,10 @@ public class ApplicationController {
             List<Project> query() {
         return projectService.findAll();
     }
+    /*
+    @Autowired
+    public void setIProjectService(IProjectService ips) {
+    	this.projectService = ips;
+    }
+    */
 }

@@ -35,7 +35,19 @@ public class Project {
         return id;
     }
 
-    public String getName() {
+    public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setFinishingDate(Date finishingDate) {
+		this.finishingDate = finishingDate;
+	}
+
+	public String getName() {
         return name;
     }
 

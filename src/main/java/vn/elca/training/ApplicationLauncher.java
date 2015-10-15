@@ -11,7 +11,6 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.context.support.ResourceBundleMessageSource;
 
 import vn.elca.training.service.IProjectService;
-import vn.elca.training.service.ProjectService;
 import vn.elca.training.web.ApplicationController;
 
 @Configuration
@@ -33,10 +32,5 @@ public class ApplicationLauncher {
         ResourceBundleMessageSource resourceBundleMessageSource = new ResourceBundleMessageSource();
         resourceBundleMessageSource.setBasename("message");
         return resourceBundleMessageSource;
-    }
-
-    @Bean
-    public static IProjectService findAll() {
-        return new ProjectService();
     }
 }
