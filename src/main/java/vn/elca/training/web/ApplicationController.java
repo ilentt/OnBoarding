@@ -41,10 +41,4 @@ public class ApplicationController {
             List<Project> query() {
         return projectService.findAll();
     }
-    /*
-    @Autowired
-    public void setIProjectService(IProjectService ips) {
-    	this.projectService = ips;
-    }
-    */
 }

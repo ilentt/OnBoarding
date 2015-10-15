@@ -17,15 +17,4 @@ public class ProjectService implements IProjectService {
     public List<Project> findAll() {
         return projectRepository.findAll();
     }
-    /*
-    @Autowired
-    public void setProjectRespository(IProjectRepository ipr) {
-    	this.projectRepository = ipr;
-    }
-    /*
-    public static void main(String[] args) {
-        ProjectService p = new ProjectService();
-        p.findAll();
-    }
-    */
 }
