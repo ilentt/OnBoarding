@@ -17,4 +17,18 @@ public class ProjectService implements IProjectService {
     public List<Project> findAll() {
         return projectRepository.findAll();
     }
+
+	@Override
+	public List<Project> findProjects(String name) {
+		// TODO Auto-generated method stub
+		return projectRepository.findAllByName(name);
+	}
+
+	@Override
+	public Project findOne(Long id) {
+		// TODO Auto-generated method stub
+		return projectRepository.findOne(id);
+	}
+    
+    
 }

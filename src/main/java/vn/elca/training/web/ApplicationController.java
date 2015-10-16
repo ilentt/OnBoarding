@@ -7,7 +7,9 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -18,27 +20,36 @@ import vn.elca.training.service.IProjectService;
 public class ApplicationController {
 	@Autowired
 	private IProjectService projectService;
-    @Value("${total.number.of.projects}")
-    private String message;
-    @Value("${application.title}")
-    private String title;
+	@Value("${total.number.of.projects}")
+	private String message;
+	@Value("${application.title}")
+	private String title;
 
-    @RequestMapping("/")
-            ModelAndView main() {
-        Map<String, Object> model = new HashMap<String, Object>() {
-            private static final long serialVersionUID = -6883088231537577238L;
+	@RequestMapping("/")
+	ModelAndView main() {
+		Map<String, Object> model = new HashMap<String, Object>() {
+			private static final long serialVersionUID = -6883088231537577238L;
 
-            {
-                put("title", title);
-                put("message", String.format(message, projectService.findAll().size()));
-            }
-        };
-        return new ModelAndView("search", model);
+			{
+				put("title", title);
+				put("message", String.format(message, projectService.findAll().size()));
+			}
+		};
+		return new ModelAndView("search", model);
+	}
+	//@RequestMapping(value = "/query", method=RequestMethod.GET)
+	@RequestMapping(value = "/query")
+	
+	@ResponseBody
+	List<Project> query(@RequestParam("name") String name) {
+		//return projectService.findAll();
+		return projectService.findProjects(name);
+	}
+	
+	@RequestMapping(value = "/edit/id/{id}")
+	@ResponseBody
+	public Project add(@PathVariable("id") Long id) {
+        return projectService.findOne(id);
     }
-
-    @RequestMapping("/query")
-    @ResponseBody
-            List<Project> query() {
-        return projectService.findAll();
-    }
+	
 }

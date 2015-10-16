@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="vn.elca.training.dao.IProjectRepositoryTest" time="0.31" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="vn.elca.training.dao.IProjectRepositoryTest" time="0.448" tests="2" errors="1" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_80\jre\bin"/>
-    <property name="java.vm.version" value="24.80-b11"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin"/>
+    <property name="java.vm.version" value="25.60-b23"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\project\on-boarding-exercise"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\eclipse-workspace\project\on-boarding-exercise"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,50 +16,111 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\project\on-boarding-exercise"/>
-    <property name="java.runtime.version" value="1.7.0_80-b15"/>
+    <property name="user.dir" value="D:\eclipse-workspace\project\on-boarding-exercise"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_80\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\ilt\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\Newcomer\ILT\Java\eclipse\workspace\tools\maven\bin\m2.conf"/>
+    <property name="classworlds.conf" value="D:\eclipse\apache-maven-3.3.3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_80\bin;D:\Newcomer\ILT\Java\eclipse\workspace\tools\maven\bin;C:\Program Files\Java\jdk1.8.0_60\bin;D:\Newcomer\ILT\Java\eclipse\workspace\tools\maven\bin;C:\ProgramData\Oracle\Java\javapath;c:\oracle\product\11.2.0\client_1\bin;c:\Users\it\AppData\Local\Temp\oracle\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\DMIX;C:\Program Files\Hewlett-Packard\Drive Encryption\;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.4 ;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;c:\oracle\product\11.2.0\client_1\bin;c:\Users\it\AppData\Local\Temp\oracle\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\DMIX;C:\Program Files\Hewlett-Packard\Drive Encryption\;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.4 &amp; MySQL Utilities 1.5.4 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.4 &amp; MySQL Utilities 1.5.4 1.5\Doctrine extensions for PHP\;C:\Program Files\Java\jdk1.8.0_60\bin;D:\eclipse\apache-maven-3.3.3\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone\;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="51.0"/>
+    <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="6.1"/>
     <property name="user.home" value="C:\Users\ilt"/>
     <property name="user.timezone" value="Asia/Bangkok"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.7"/>
+    <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="ilt"/>
-    <property name="java.class.path" value="D:\Newcomer\ILT\Java\eclipse\workspace\tools\maven\boot\plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="java.class.path" value="D:\eclipse\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_80\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_60\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.7.0_80"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_80\jre\classes"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_60\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\Newcomer\ILT\Java\eclipse\workspace\tools\maven"/>
+    <property name="maven.home" value="D:\eclipse\apache-maven-3.3.3"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testCountAll" classname="vn.elca.training.dao.IProjectRepositoryTest" time="0.18"/>
-  <testcase name="testFindOneWithQueryDSL" classname="vn.elca.training.dao.IProjectRepositoryTest" time="0.13"/>
+  <testcase name="testCountAll" classname="vn.elca.training.dao.IProjectRepositoryTest" time="0.026">
+    <failure message="expected:&lt;4&gt; but was:&lt;0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<4> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at vn.elca.training.dao.IProjectRepositoryTest.testCountAll(IProjectRepositoryTest.java:37)
+]]></failure>
+    <system-out><![CDATA[16:30:10.432 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class vn.elca.training.dao.IProjectRepositoryTest].
+16:30:10.453 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+16:30:10.470 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@370736d9 declaringClass = 'vn.elca.training.dao.IProjectRepositoryTest', classes = '{class vn.elca.training.ApplicationLauncher}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+16:30:10.479 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [vn.elca.training.dao.IProjectRepositoryTest]
+16:30:10.484 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [vn.elca.training.dao.IProjectRepositoryTest]: using defaults.
+16:30:10.493 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:30:10.517 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@467aecef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4d50efb8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7e2d773b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2173f6d9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@307f6b8c]
+16:30:10.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.elca.training.dao.IProjectRepositoryTest]
+16:30:10.520 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.elca.training.dao.IProjectRepositoryTest]
+16:30:10.520 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.elca.training.dao.IProjectRepositoryTest]
+16:30:10.521 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.elca.training.dao.IProjectRepositoryTest]
+16:30:10.524 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.elca.training.dao.IProjectRepositoryTest]
+16:30:10.524 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.elca.training.dao.IProjectRepositoryTest]
+16:30:10.526 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@4abdb505 testClass = IProjectRepositoryTest, testInstance = vn.elca.training.dao.IProjectRepositoryTest@7ce6a65d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1500955a testClass = IProjectRepositoryTest, locations = '{}', classes = '{class vn.elca.training.ApplicationLauncher}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+16:30:10.592 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:30:10.593 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:30:10.593 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:30:10.594 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.6.RELEASE)
+
+2015-10-15 16:30:10.816  INFO 1320 --- [           main] v.e.training.dao.IProjectRepositoryTest  : Starting IProjectRepositoryTest on PC15283 with PID 1320 (D:\eclipse-workspace\project\on-boarding-exercise\target\test-classes started by ilt in D:\eclipse-workspace\project\on-boarding-exercise)
+2015-10-15 16:30:10.875  INFO 1320 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1139b2f3: startup date [Thu Oct 15 16:30:10 ICT 2015]; root of context hierarchy
+2015-10-15 16:30:12.765  INFO 1320 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-10-15 16:30:12.792  INFO 1320 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-10-15 16:30:12.884  INFO 1320 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2015-10-15 16:30:12.886  INFO 1320 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2015-10-15 16:30:12.889  INFO 1320 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2015-10-15 16:30:13.199  INFO 1320 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-15 16:30:13.299  INFO 1320 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-10-15 16:30:13.448  INFO 1320 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2015-10-15 16:30:13.821  INFO 1320 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2015-10-15 16:30:13.824 DEBUG 1320 --- [           main] org.hibernate.SQL                        : drop table project if exists
+2015-10-15 16:30:13.825 DEBUG 1320 --- [           main] org.hibernate.SQL                        : create table project (id bigint generated by default as identity, finishing_date timestamp, name varchar(255) not null, primary key (id))
+2015-10-15 16:30:13.835  INFO 1320 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2015-10-15 16:30:14.997  INFO 1320 --- [           main] v.e.training.dao.IProjectRepositoryTest  : Started IProjectRepositoryTest in 4.399 seconds (JVM running for 5.012)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindOneWithQueryDSL" classname="vn.elca.training.dao.IProjectRepositoryTest" time="0.422">
+    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at vn.elca.training.dao.IProjectRepositoryTest.testFindOneWithQueryDSL(IProjectRepositoryTest.java:46)
+</error>
+    <system-out><![CDATA[2015-10-15 16:30:15.429 DEBUG 1320 --- [           main] org.hibernate.SQL                        : select project0_.id as id1_0_, project0_.finishing_date as finishin2_0_, project0_.name as name3_0_ from project project0_ where project0_.name=? limit ?
+]]></system-out>
+  </testcase>
 </testsuite>

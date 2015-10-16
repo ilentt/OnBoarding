@@ -32,9 +32,13 @@ public class ProjectRepository implements IProjectRepository {
 	@Override
 	public List<Project> findAll() {
 		// TODO Auto-generated method stub
-		Project project = new Project((long) 1, "My project", new Date()); 
+		Project pro1 = new Project((long) 1, "SecuTix", new Date()); 
+		Project pro2 = new Project((long) 2, "PaKT", new Date());
+		Project pro3 = new Project((long) 3, "ViKOST", new Date());
 		List<Project> list = new ArrayList<Project>();
-		list.add(project);
+		list.add(pro1);
+		list.add(pro2);
+		list.add(pro3);
 		return list;
 	}
 
@@ -50,6 +54,21 @@ public class ProjectRepository implements IProjectRepository {
 		return null;
 	}
 
+	@Override
+	public List<Project> findAllByName(String name) {
+		// TODO Auto-generated method stub
+		List<Project> list = new ArrayList<Project>();
+		if(!name.isEmpty()) {
+			for(Project pro : findAll()) {
+				if(pro.getName().toLowerCase().equals(name.toLowerCase()) || pro.getName().toLowerCase().contains(name.toLowerCase())) {
+					list.add(pro);
+				}
+			}
+			return list;
+		}
+		return findAll();
+	}
+	
 	@Override
 	public void flush() {
 		// TODO Auto-generated method stub
@@ -117,8 +136,13 @@ public class ProjectRepository implements IProjectRepository {
 	}
 
 	@Override
-	public Project findOne(Long arg0) {
+	public Project findOne(Long id) {
 		// TODO Auto-generated method stub
+		for(Project pro : findAll()) {
+			if(pro.getId() == id) {
+				return pro;
+			}
+		}
 		return null;
 	}
 
@@ -157,5 +181,5 @@ public class ProjectRepository implements IProjectRepository {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
 }
