@@ -10,5 +10,5 @@ import vn.elca.training.dom.Project;
 
 @Repository
 public interface IProjectRepository extends JpaRepository<Project, Long>, QueryDslPredicateExecutor<Project> {
-	List<Project> findAllByName(String name);
+	List<Project> findProjectByName(String name);
 }

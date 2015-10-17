@@ -55,7 +55,7 @@ public class ProjectRepository implements IProjectRepository {
 	}
 
 	@Override
-	public List<Project> findAllByName(String name) {
+	public List<Project> findProjectByName(String name) {
 		// TODO Auto-generated method stub
 		List<Project> list = new ArrayList<Project>();
 		if(!name.isEmpty()) {
@@ -181,5 +181,4 @@ public class ProjectRepository implements IProjectRepository {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
 }

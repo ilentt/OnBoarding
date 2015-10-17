@@ -19,9 +19,9 @@ public class ProjectService implements IProjectService {
     }
 
 	@Override
-	public List<Project> findProjects(String name) {
+	public List<Project> findProjectByName(String name) {
 		// TODO Auto-generated method stub
-		return projectRepository.findAllByName(name);
+		return projectRepository.findProjectByName(name);
 	}
 
 	@Override

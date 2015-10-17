@@ -7,5 +7,5 @@ import vn.elca.training.dom.Project;
 public interface IProjectService {
     List<Project> findAll();
     Project findOne(Long id);
-	List<Project> findProjects(String name);
+	List<Project> findProjectByName(String name);
 }

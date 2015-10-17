@@ -25,6 +25,11 @@ public class ApplicationController {
 	@Value("${application.title}")
 	private String title;
 
+	@Value("${project.name}")
+	private String name;
+	@Value("${project.title}")
+	private String protitle;
+	
 	@RequestMapping("/")
 	ModelAndView main() {
 		Map<String, Object> model = new HashMap<String, Object>() {
@@ -37,19 +42,30 @@ public class ApplicationController {
 		};
 		return new ModelAndView("search", model);
 	}
-	//@RequestMapping(value = "/query", method=RequestMethod.GET)
-	@RequestMapping(value = "/query")
-	
+
+	@RequestMapping("/query")
 	@ResponseBody
 	List<Project> query(@RequestParam("name") String name) {
-		//return projectService.findAll();
-		return projectService.findProjects(name);
+		return projectService.findProjectByName(name);
 	}
-	
-	@RequestMapping(value = "/edit/id/{id}")
+
+	@RequestMapping("/detail/{id}")
+	ModelAndView view(@PathVariable("id") Long id) {
+
+		Map<String, Object> model = new HashMap<String, Object>() {
+
+			private static final long serialVersionUID = 1541520911873996579L;
+
+			{
+				put("protitle",protitle);
+				put("name", String.format(name, projectService.findOne(id).getName()));
+			}
+		};
+
+		return new ModelAndView("detail", model);
+	}
 	@ResponseBody
-	public Project add(@PathVariable("id") Long id) {
-        return projectService.findOne(id);
-    }
-	
+	Project detail(@PathVariable("id") Long id) {
+		return projectService.findOne(id);
+	}
 }

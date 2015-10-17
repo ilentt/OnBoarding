@@ -1,6 +1,5 @@
 function ProjectViewModel() {
 	var self = this;
-
 	self.prjName = ko.observable("");
 
 	self.projects = ko.observableArray([]);
@@ -18,6 +17,6 @@ function ProjectViewModel() {
 	}
 }
 
-$( document ).ready(function() {
+$(document).ready(function() {
 	ko.applyBindings(new ProjectViewModel());
 });
